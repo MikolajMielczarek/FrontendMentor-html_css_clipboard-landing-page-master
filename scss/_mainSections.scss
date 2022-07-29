@@ -1,0 +1,108 @@
+.main__section {
+    padding-bottom: 140px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: $font-size-headings;
+        align-self: center;
+    }
+    &__article{
+        align-self: center;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        @include font-paragraphs();
+    }
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__button{
+        height: 50px;
+        margin: 10px 0px 10px 0px;
+        border-radius: 30px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;  
+    }
+    &__button--first-btn  {
+        background-color:$color-bgc-btn-ios;
+        border: 1px solid darken($color-bgc-btn-ios, 5%);
+        border-bottom: 3px solid darken($color-bgc-btn-ios, 5%);
+        box-shadow: 0px 5px 10px lighten($color-bgc-btn-ios, 30%);
+    }
+    &__button--second-btn{
+     background-color:$color-bgc-btn-mac;
+     border: 1px solid darken($color-bgc-btn-mac, 5%);
+     border-bottom: 3px solid darken($color-bgc-btn-mac, 5%);
+     box-shadow: 0px 5px 10px lighten($color-bgc-btn-mac, 10%);
+    }
+}
+
+.title--snipets{
+    font-size: 2.8rem;
+}
+
+.computer-container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    &__img{
+        width:100%;
+    }
+}
+
+.snippet-container {
+    padding-top: 40px;
+    &__title{
+        font-size: 2.5rem;
+        padding-bottom: 8px;
+    }
+    &__article{
+        @include font-paragraphs();
+    }
+}
+.main__section--acces-clipboard{
+    padding-bottom: 80px;
+}
+
+.header-section__img{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.div-aside-tools {
+    &__img{
+        width: 10%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__title{
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+    &__article{
+        @include font-paragraphs();
+    }
+}
+
+.aside-companies {
+    padding-top: 50px;
+}
+
+.div-aside-companies {
+    padding-top: 50px;   
+    &__img{
+        width: 36%;
+    }
+}
+
+

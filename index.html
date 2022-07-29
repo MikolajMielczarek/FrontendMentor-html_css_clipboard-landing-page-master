@@ -1,136 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Clipboard landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="page-container">
 
-  <header class="web-header">
-    <img class="web-header__img" src="./images/logo.svg" alt="main logo">
-  </header>
+    <header class="page-container__header web-header">
+      <img class="web-header__img" src="./images/logo.svg" alt="main logo">
+    </header>
 
-  <main class="main">
+    <main class="page-container__main main">
 
-  <section class="main__section">
-      <header class="header">
-        <h1 class="header__title">A history of everything you copy</h1>
-        <p class="header__article">Clipboard allows you to track and organize everything you 
-          copy. Instantly access your clipboard on all your devices.</p>
-      </header>
-      <div class="header__div-buttons">
-        <button class="header__button header__button--first-btn">Download for iOS</button>
-        <button class="header__button header__button--second-btn">Download for Mac</button>
-      </div>
-    </section>
-
-    <section class="main__section">
-      <header class="header">
-        <h2 class="header__title">Keep track of your snippets</h2>
-        <p class="header__article">Clipboard instantly stores any item you copy in the cloud, 
-          meaning you can access your snippets immediately on all your 
-          devices. Our Mac and iOS apps will help you organize everything.</p>
-      </header>
-      <div class="header__div-container">
-        <img src="./images/image-computer.png" alt="computer">
-        <div>
-          <h3>Quick Search</h3>
-          <p>Easily search your snippets by content, category, web address, application, and more.</p>
-          <h3>iCloud Sync</h3>
-          <p>Instantly saves and syncs snippets across all your devices.</p>
-          <h3>Complete History</h3>
-          <p>Retrieve any snippets from the first moment you started using the app.</p>
+      <section class="main__section">
+        <header class="header-section">
+          <h1 class="header-section__title">A history of everything you copy</h1>
+          <p class="header-section__article">Clipboard allows you to track and organize everything you
+            copy. Instantly access your clipboard on all your devices.</p>
+        </header>
+        <div class="container-buttons">
+          <button class="container-buttons__button container-buttons__button--first-btn">Download for iOS</button>
+          <button class="container-buttons__button container-buttons__button--second-btn">Download for Mac</button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="main__section">
-      <header class="header">
-        <h2 class="header__title">Access Clipboard anywhere</h2>
-        <p class="header__article">Whether you’re on the go, or at your computer, you can access all your Clipboard 
-          snippets in a few simple clicks.</p>
-      </header>
-      <img class="header__img" src="./images/image-devices.png" alt="devices"> 
-    </section>
-
-    <section class="main__section">
-      <header class="header">
-        <h2 class="header__title">Supercharge your workflow</h2>
-        <p class="header__article">We’ve got the tools to boost your productivity.</p>
-      </header>
-      <aside class="main__aside">
-        <div class="div-aside">
-          <img class="div-aside__img" src="./images/icon-blacklist.svg" alt="blacklists">
-          <h3 class="div-aside__title">Create blacklists</h3>
-          <p class="div-aside__article">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      <section class="main__section">
+        <header class="header-section">
+          <h2 class="header-section__title title--snipets">Keep track of your snippets</h2>
+          <p class="header-section__article">Clipboard instantly stores any item you copy in the cloud,
+            meaning you can access your snippets immediately on all your
+            devices. Our Mac and iOS apps will help you organize everything.</p>
+        </header>
+        <div class="container-div-section">
+          <div class="container-div-section__img-container computer-container">
+            <img class="computer-container__img" src="./images/image-computer.png" alt="computer">
+          </div>
+          <div class="container-div-section__text-container">
+            <div class="snippet-container">
+              <h3 class="snippet-container__title">Quick Search</h3>
+              <p class="snippet-container__article">Easily search your snippets by content, category, web address, application, and more.</p>
+            </div>
+            <div class="snippet-container"> 
+              <h3 class="snippet-container__title">iCloud Sync</h3>
+              <p class="snippet-container__article">Instantly saves and syncs snippets across all your devices.</p>
+            </div>
+            <div class="snippet-container"> 
+              <h3 class="snippet-container__title">Complete History</h3>
+              <p class="snippet-container__article">Retrieve any snippets from the first moment you started using the app.</p>
+            </div>
+          </div>
         </div>
-        <div class="div-aside">
-          <img class="div-aside__img" src="./images/icon-text.svg" alt="text">
-          <h3 class="div-aside__title" >Plain text snippets</h3>
-          <p class="div-aside__article">Remove unwanted formatting from copied text for a consistent look.</p>
+      </section>
+
+      <section class="main__section main__section--acces-clipboard">
+        <header class="header-section">
+          <h2 class="header-section__title">Access Clipboard anywhere</h2>
+          <p class="header-section__article">Whether you’re on the go, or at your computer, you can access all your
+            Clipboard
+            snippets in a few simple clicks.</p>
+        </header>
+        <img class="header-section__img" src="./images/image-devices.png" alt="devices">
+      </section>
+
+      <section class="main__section">
+        <header class="header-section">
+          <h2 class="header-section__title">Supercharge your workflow</h2>
+          <p class="header-section__article">We’ve got the tools to boost your productivity.</p>
+        </header>
+        <aside class="aside-tools">
+          <div class="aside-tools__container div-aside-tools">
+            <img class="div-aside-tools__img" src="./images/icon-blacklist.svg" alt="blacklists">
+            <h3 class="div-aside-tools__title">Create blacklists</h3>
+            <p class="div-aside-tools__article">Ensure sensitive information never makes its way to your clipboard by excluding
+              certain sources.</p>
+          </div>
+          <div class="aside-tools__container div-aside-tools">
+            <img class="div-aside-tools__img" src="./images/icon-text.svg" alt="text">
+            <h3 class="div-aside-tools__title">Plain text snippets</h3>
+            <p class="div-aside-tools__article">Remove unwanted formatting from copied text for a consistent look.</p>
+          </div>
+          <div class="aside-tools__container div-aside-tools">
+            <img class="div-aside-tools__img" src="./images/icon-preview.svg" alt="preview eye">
+            <h3 class="div-aside-tools__title">Sneak preview</h3>
+            <p class="div-aside-tools__article">Quick preview of all snippets on your Clipboard for easy access.</p>
+          </div>
+        </aside>
+        <aside class="aside-companies">
+          <div class="aside-companies__container div-aside-companies">
+            <img class="div-aside-companies__img" src="./images/logo-google.png" alt="google logo">
+          </div>
+          <div class="aside-companies__container div-aside-companies">
+            <img class="div-aside__img" src="./images/logo-ibm.png" alt="ibm logo">
+          </div>
+          <div class="aside-companies__container div-aside-companies">
+            <img class="div-aside-companies__img" src="./images/logo-microsoft.png " alt="microsoft logo">
+          </div>
+          <div class="aside-companies__container div-aside-companies">
+            <img class="div-aside-companies__img" src="./images/logo-hp.png" alt="hp logo">
+          </div>
+          <div class="aside-companies__container div-aside-companies">
+            <img class="div-aside-companies__img" src="./images/logo-vector-graphics.png" alt="vector graphics logo">
+          </div>
+        </aside>
+      </section>
+
+      <section class="main__section">
+        <header class="header-section">
+          <h2 class="header-section__title">Clipboard for iOS and Mac OS</h2>
+          <p class="header-section__article">Available for free on the App Store. Download for Mac or iOS, sync with
+            iCloud
+            and you’re ready to start adding to your clipboard.
+          </p>
+        </header>
+        <div class="container-buttons">
+          <button class="container-buttons__button container-buttons__button--first-btn">Download for iOS</button>
+          <button class="container-buttons__button container-buttons__button--second-btn">Download for Mac</button>
         </div>
-        <div class="div-aside">
-          <img class="div-aside__img" src="./images/icon-preview.svg" alt="preview eye">
-          <h3 class="div-aside__title">Sneak preview</h3>
-          <p class="div-aside__article">Quick preview of all snippets on your Clipboard for easy access.</p>
-        </div>
-      </aside>
-      <aside class="div-aside">
-        <img class="div-aside__img" src="./images/logo-google.png" alt="google logo">
-        <img class="div-aside__img" src="./images/logo-ibm.png" alt="ibm logo">
-        <img class="div-aside__img" src="./images/logo-microsoft.png " alt="microsoft logo">
-        <img class="div-aside__img" src="./images/logo-hp.png" alt="hp logo">
-        <img class="div-aside__img" src="./images/logo-vector-graphics.png" alt="vector graphics logo">
-      </aside>
-    </section>
+      </section>
+    </main>
 
-    <section class="main__section">
-      <header class="header">
-        <h1 class="header__title">Clipboard for iOS and Mac OS</h1>
-        <p class="header__article">Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-          and you’re ready to start adding to your clipboard.
-        </p>
-      </header>
-      <div class="header__div-buttons">
-        <button class="header__button header__button--first-btn">Download for iOS</button>
-        <button class="header__button header__button--second-btn" >Download for Mac</button>
-      </div>
-    </section>
+    <footer class="page-container__footer">
 
-    <footer class="main__footer">
-
-      <div class="footer-div">
+      <div class="footer-div footer-div--img">
         <img class="footer-div__img" src="./images/logo.svg" alt="logo">
       </div>
 
-      <div class="footer-div">
-        <p class="footer-div__article">FAQs</p>
-      </div>
+      <div class="footer-div--cointener-articles">
+        <div class="footer-div">
+          <p class="footer-div__article">FAQs</p>
+        </div>
 
-      <div class="footer-div">
-        <p class="footer-div__article">Contact Us</p>
-      </div>
+        <div class="footer-div">
+          <p class="footer-div__article">Contact Us</p>
+        </div>
 
-      <div class="footer-div">
-        <p class="footer-div__article">Privacy Policy</p>
-      </div>
+        <div class="footer-div">
+          <p class="footer-div__article">Privacy Policy</p>
+        </div>
 
-      <div class="footer-div">
-        <p class="footer-div__article">Press Kit</p>
-      </div>
+        <div class="footer-div">
+          <p class="footer-div__article">Press Kit</p>
+        </div>
 
-      <div class="footer-div">
-        <p class="footer-div__article">Install Guide</p>
+        <div class="footer-div">
+          <p class="footer-div__article">Install Guide</p>
+        </div>
       </div>
 
       <div class="footer-div-img">
@@ -138,16 +176,8 @@
         <img class="footer-div-img__img" src="./images/icon-twitter.svg" alt="twitter logo">
         <img class="footer-div-img__img" src="./images/icon-instagram.svg" alt="instagram logo">
       </div>
-
     </footer>
-
-  </main>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  </div>
 </body>
+
 </html>

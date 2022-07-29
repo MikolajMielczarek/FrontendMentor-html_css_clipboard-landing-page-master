@@ -1,0 +1,15 @@
+.web-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-header-mobile.png);
+    background-image: linear-gradient(to botom, url(../images/bg-header-mobile.png));
+
+    &__img {
+        width:30%;
+    }
+}
+
+
+
+

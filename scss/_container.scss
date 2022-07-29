@@ -1,0 +1,20 @@
+.page-container{
+    text-align: center;
+    font-family: $font-family-name-all;
+
+    &__header{
+        padding: 80px 15px 80px 15px;
+        
+    }
+    &__main{
+        width: 90%;
+        padding: 0px 15px 0px 15px;
+        margin: 0 auto;
+    }
+    &__footer{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        background-color: ($color-bgc-footer)
+    }
+}

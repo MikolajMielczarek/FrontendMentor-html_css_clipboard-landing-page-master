@@ -1,0 +1,14 @@
+@mixin font-headings($family:$font-family-name-all, $size:$font-size-headings, $weight:$font-weight-headings) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight; 
+}
+
+@mixin font-paragraphs($family:$font-family-name-all, $size:$font-size-paragraphs, $weight:$font-weight-articles, $color:$color-bgc-font-articles, $line-height:$line-height-paragraph) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line-height;
+ }
+
