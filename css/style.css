@@ -624,6 +624,9 @@ body {
     max-width: 1600px;
     margin: 0 auto;
   }
+  .main__section {
+    max-width: caclc(1440) px;
+  }
   .container-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -638,6 +641,30 @@ body {
   }
   .container-buttons__link {
     font-size: 20px;
+  }
+  .container-div-section--computer {
+    width: 1600px;
+  }
+  .computer-container {
+    position: relative;
+    left: -16%;
+  }
+  .computer-container__img {
+    width: 100%;
+  }
+  .container-div-section__text-container {
+    text-align: left;
+    width: 37%;
+    position: relative;
+    left: -10%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .main__section--access-clipboard {
+    width: 1600px;
+  }
+  .main__section--asides {
+    width: 1600px;
   }
   .footer-div-img__svg {
     color: rgb(119, 125, 130);
