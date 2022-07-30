@@ -1,7 +1,8 @@
 @import 'variables';
 @import 'mixin';
-@import 'reset';
-@import 'container';
-@import 'header';
-@import 'mainSections';
-@import 'footer';
+@import 'settings';
+@import './components/container';
+@import './components/header';
+@import './components/mainSections';
+@import './components/footer';
+@import 'mediaQueries';
